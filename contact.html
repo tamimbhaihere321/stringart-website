@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | StringArt Atelier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> StringArt <span class="logo-accent">Atelier</span></a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-header">
+      <div class="container">
+        <h1 class="page-title">Get in <span class="accent-yellow">touch</span></h1>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container grid-2">
+        <div class="contact-info reveal">
+          <h2>Let's create together</h2>
+          <p>Have a question or ready to start your custom piece? Reach out any time.</p>
+          <ul class="contact-details">
+            <li>📧 hello@stringartatelier.com</li>
+            <li>📞 +1 (555) 237-8484</li>
+            <li>💬 <a href="#" id="whatsappLink">WhatsApp: +1 555 123 4567</a></li>
+          </ul>
+          <div class="social-large">
+            <a href="#">📘 Facebook</a>
+            <a href="#">📷 Instagram</a>
+            <a href="#">📌 Pinterest</a>
+          </div>
+          <div class="map-placeholder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-73.98510768458457!3d40.74856997932748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30e4b9f%3A0x8b5a3b5b5b5b5b5b!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1620000000000" width="100%" height="200" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <h3>Send a message</h3>
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Tell me about your idea..." rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <p class="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="logo-icon">✦</span> StringArt Atelier</div>
+        <div class="footer-social">
+          <a href="#">📷</a><a href="#">📘</a><a href="#">📌</a><a href="#">💬</a>
+        </div>
+        <div class="footer-copy">© 2025 StringArt Atelier.</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
