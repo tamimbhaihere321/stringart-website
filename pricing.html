@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | StringArt Atelier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> StringArt <span class="logo-accent">Atelier</span></a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-header">
+      <div class="container">
+        <h1 class="page-title">Pricing & <span class="accent-blue">order</span></h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <table class="pricing-table">
+          <thead><tr><th>Size</th><th>Dimensions</th><th>Starting price</th></tr></thead>
+          <tbody>
+            <tr><td>Small</td><td>8"x10"</td><td>$60</td></tr>
+            <tr><td>Medium</td><td>12"x16"</td><td>$120</td></tr>
+            <tr><td>Large</td><td>18"x24"</td><td>$220</td></tr>
+            <tr><td>Custom</td><td>Any size</td><td>Inquire</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section order-steps">
+      <div class="container grid-2">
+        <div class="steps-list reveal">
+          <h2 class="section-title">How to <span class="accent-purple">order</span></h2>
+          <ol>
+            <li>Choose artwork type & size</li>
+            <li>Fill the form below</li>
+            <li>I'll sketch & confirm within 48h</li>
+            <li>50% deposit starts the work</li>
+            <li>Shipping within 2‑3 weeks</li>
+          </ol>
+          <a href="#" id="whatsappOrderBtn" class="btn btn-whatsapp">📱 Order via WhatsApp</a>
+        </div>
+        <div class="order-form reveal">
+          <h3>Request a quote</h3>
+          <form id="orderForm">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="type" required>
+              <option value="">Artwork type</option>
+              <option>Name Art</option>
+              <option>Portrait</option>
+              <option>Custom</option>
+              <option>Decor</option>
+            </select>
+            <select name="size" required>
+              <option value="">Size</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+              <option>Custom</option>
+            </select>
+            <textarea name="description" placeholder="Describe your idea..." rows="4"></textarea>
+            <button type="submit" class="btn btn-primary">Send request</button>
+            <p class="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="logo-icon">✦</span> StringArt Atelier</div>
+        <div class="footer-social">
+          <a href="#">📷</a><a href="#">📘</a><a href="#">📌</a><a href="#">💬</a>
+        </div>
+        <div class="footer-copy">© 2025 StringArt Atelier.</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
