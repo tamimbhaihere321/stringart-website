@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | StringArt Atelier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> StringArt <span class="logo-accent">Atelier</span></a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-header">
+      <div class="container">
+        <h1 class="page-title">Thread <span class="accent-yellow">gallery</span></h1>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="name">Name Art</button>
+          <button class="filter-btn" data-filter="portrait">Portrait</button>
+          <button class="filter-btn" data-filter="custom">Custom</button>
+          <button class="filter-btn" data-filter="decor">Decor</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="name"><img src="https://picsum.photos/id/431/600/600" alt="Name art Emma" loading="lazy"></div>
+        <div class="gallery-item" data-category="name"><img src="https://picsum.photos/id/159/600/600" alt="Name art Noah" loading="lazy"></div>
+        <div class="gallery-item" data-category="portrait"><img src="https://picsum.photos/id/1074/600/600" alt="Cat portrait" loading="lazy"></div>
+        <div class="gallery-item" data-category="portrait"><img src="https://picsum.photos/id/581/600/600" alt="Dog portrait" loading="lazy"></div>
+        <div class="gallery-item" data-category="custom"><img src="https://picsum.photos/id/1043/600/600" alt="Custom wedding" loading="lazy"></div>
+        <div class="gallery-item" data-category="custom"><img src="https://picsum.photos/id/106/600/600" alt="Floral custom" loading="lazy"></div>
+        <div class="gallery-item" data-category="decor"><img src="https://picsum.photos/id/20/600/600" alt="Geometric decor" loading="lazy"></div>
+        <div class="gallery-item" data-category="decor"><img src="https://picsum.photos/id/42/600/600" alt="Abstract decor" loading="lazy"></div>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox">&times;</span>
+      <img class="lightbox-content" id="lightboxImg">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="logo-icon">✦</span> StringArt Atelier</div>
+        <div class="footer-social">
+          <a href="#">📷</a><a href="#">📘</a><a href="#">📌</a><a href="#">💬</a>
+        </div>
+        <div class="footer-copy">© 2025 StringArt Atelier.</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
