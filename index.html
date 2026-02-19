@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StringArt Atelier | Handmade thread art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span> StringArt <span class="logo-accent">Atelier</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1 class="hero-title">Threads that tell <span class="accent-pink">your story</span></h1>
+        <p class="hero-subtitle">Handcrafted string art • custom designs • heirloom quality</p>
+        <a href="gallery.html" class="btn btn-primary">Explore gallery</a>
+      </div>
+    </section>
+
+    <section class="section slider-section">
+      <div class="container">
+        <h2 class="section-title">Featured <span class="accent-blue">artworks</span></h2>
+        <div class="slider-container" id="slider">
+          <div class="slider-wrapper">
+            <div class="slide"><img src="https://picsum.photos/id/1043/800/500" alt="String art heart" loading="lazy"></div>
+            <div class="slide"><img src="https://picsum.photos/id/106/800/500" alt="Floral thread pattern" loading="lazy"></div>
+            <div class="slide"><img src="https://picsum.photos/id/20/800/500" alt="Geometric string art" loading="lazy"></div>
+          </div>
+          <button class="slider-prev" aria-label="Previous slide">❮</button>
+          <button class="slider-next" aria-label="Next slide">❯</button>
+          <div class="slider-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-preview">
+      <div class="container grid-2">
+        <div class="about-preview-content reveal">
+          <h2 class="section-title">Made with <span class="accent-yellow">patience</span></h2>
+          <p>Every piece begins with a single nail and thousands of thread wraps. I’m Elena, a self‑taught artist transforming simple materials into textured stories. My work blends modern minimalism with the warmth of handmade.</p>
+          <a href="about.html" class="btn btn-outline">Read my story →</a>
+        </div>
+        <div class="about-preview-image reveal">
+          <img src="https://picsum.photos/id/42/600/400" alt="Artist at work" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-highlight">
+      <div class="container">
+        <h2 class="section-title">What I <span class="accent-pink">offer</span></h2>
+        <div class="card-grid">
+          <div class="service-card reveal">
+            <div class="card-icon" style="background: #ec489920;">🖼️</div>
+            <h3>Custom portraits</h3>
+            <p>From pet portraits to silhouettes – I translate your photos into thread.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="card-icon" style="background: #3b82f620;">✏️</div>
+            <h3>Name art</h3>
+            <p>Personalized names, dates or quotes for nurseries, weddings & gifts.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="card-icon" style="background: #facc1520;">🏡</div>
+            <h3>Home decor</h3>
+            <p>Geometric patterns, abstracts & modern wall art for any interior.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="card-icon" style="background: #8b5cf620;">🎨</div>
+            <h3>Workshops</h3>
+            <p>Learn the craft in small groups – all materials provided.</p>
+          </div>
+        </div>
+        <div class="center-text">
+          <a href="services.html" class="btn btn-secondary">View all services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">Kind <span class="accent-purple">words</span></h2>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card reveal">
+            <p>“The custom piece for our anniversary left us speechless. Every thread is perfect.”</p>
+            <cite>— Sarah & Mark</cite>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <p>“Elena designed a portrait of our dog who passed away. It’s now the heart of our home.”</p>
+            <cite>— James</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">✦</span> StringArt Atelier
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Pinterest">📌</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+        <div class="footer-copy">
+          © 2025 StringArt Atelier. Handmade with thread.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
